@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agency Website</title>
+    <title>Lingo Translation Agency</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
 </head>
+
 <body>
-    <header>
-        <h1>Agency Website</h1>
+    <header class="flex-row space-between gap-sm">
+        <a href="#"><img src="assets/4.png" alt="Lingo" class="img-sm" aria-label="Home" /></a>
         <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact Us</li>
+            <ul class="flex-row gap-md">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <!-- About -->
+        <section class="hero">
+            <div class="grid-row center width-lg gap-md">
+                <p class="width-sm">We are a translation agency, determined to get you the best translations in the market, blah blah
+                    blah</p>
+                <img src="assets/hero.jpg" alt="" class="width-sm" />
+            </div>
         </section>
         <section>
             <!-- Contact Us -->
@@ -30,4 +37,5 @@
     </main>
     <script src="index.js"></script>
 </body>
+
 </html>
