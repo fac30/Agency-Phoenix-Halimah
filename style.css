@@ -153,12 +153,7 @@ ul {
 }
 
 .grid-container {
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 5vw);
-    grid-row-gap: 100px;
-    grid-column-gap: 50px;
-    margin-top: 50px; */
+   
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 10vw);
@@ -170,17 +165,12 @@ ul {
 }
 .grid-item {
     display: flex;            /* new */
-    /* align-items: center;      new */
+
     justify-content: center;
     height: 100px;
     
 }
 
-/* .gallery_img {
-width: 30%;
-height: 100%;
-
-} */
 @media (max-width: 950px) {
 .grid-container {
     grid-template-columns: 1fr 1fr; /* Two columns for small screens */
