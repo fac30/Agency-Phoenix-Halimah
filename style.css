@@ -1,0 +1,145 @@
+:root {
+    /* Colours */
+    --clr-neutral-100: #FDFFFC;
+    --clr-neutral-800: #1A535C;
+    --clr-neutral-900: #2D232E;
+    --clr-accent-300: #FF6B6B;
+
+    /* Font sizes */
+    --fs-small: 0.9rem;
+    --fs-regular: 1rem;
+    --fs-medium: 1.5rem;
+    --fs-large: 2rem;
+    
+    /* Font weights */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+}
+
+/* Utility Classes */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+/* Sizes */
+.width-sm {
+    max-width: 30rem;
+}
+
+.width-lg {
+    max-width: 80rem;
+}
+
+.img-sm {
+    max-width: 7rem;
+}
+
+.stack-sm {
+    margin-top: 0.5rem;
+}
+
+.stack-md {
+    margin-top: 1rem;
+}
+
+.stack-lg {
+    margin-top: 2rem;
+}
+
+.stack-xl {
+    margin-top: 3rem;
+}
+
+.gap-sm {
+    gap: 1rem;
+}
+
+.gap-md {
+    gap: 2rem;
+}
+
+.gap-lg {
+    gap: 3rem;
+}
+
+.center {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main CSS */
+
+body {
+    background-color: var(--clr-neutral-100);
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    background-color: var(--clr-neutral-800);
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-regular);
+    padding: 1.5rem;
+}
+
+header li a {
+    color: var(--clr-neutral-100);
+    text-decoration: none;
+}
+
+header li a:hover {
+    color: var(--clr-accent-300);
+    padding-bottom: 0.5rem;
+    border-bottom: solid 2px var(--clr-accent-300);
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Hero section */
+
+.hero {
+    background-color: var(--clr-neutral-800);
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-neutral-100);
+    font-size: var(--fs-regular);
+}
+
+.hero p {
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-semi-bold);
+}
+
+.hero img {
+    border-radius: 1rem;
+    max-width: 30rem;
+}
