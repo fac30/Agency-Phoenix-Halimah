@@ -27,6 +27,42 @@
                     blah</p>
                 <img src="assets/hero.jpg" alt="" class="width-sm" />
             </div>
+            <div class= "flag-container">
+                <div class="grid-container">
+                    <figure class="grid-item">
+                        <img src="assets/greece-flag-square-small.jpg" width="125" height="100" alt="Greek Flag" class="gallery_img" data-toggle="popover" title="Greece" data-content="Greece is known for its ancient history and is often referred to as the cradle of Western civilization. It's famous for its mythology, philosophy, and contributions to art and science.">
+                    </figure>
+                    
+                    <figure class="grid-item">
+                        <img src="assets/china-flag-small.png" width="125" height="100" alt="Chinese Flag" class="gallery_img" data-toggle="popover" title="China" data-content="China is the world's most populous country and has a rich cultural heritage. It's known for the Great Wall, the Terracotta Army, and contributions to various fields such as philosophy, medicine, and technology.">
+                    </figure>
+                    
+                    <figure class="grid-item">
+                        <img src="assets/russia-flag-square-small.png" width="125" height="100" alt="Russian Flag" class="gallery_img" data-toggle="popover" title="Russia" data-content="Russia is the largest country in the world, spanning Eastern Europe and Northern Asia. It has a diverse landscape, rich literature, and is known for achievements in space exploration.">
+                    </figure>
+                    
+                    <figure class="grid-item">
+                        <img src="assets/japan-flag-square-small.jpg" width="125" height="100" alt="Japanese Flag" class="gallery_img" data-toggle="popover" title="Japan" data-content="Japan is a country with a unique blend of traditional and modern elements. It's famous for its cherry blossoms, sushi, advanced technology, and contributions to anime and video games.">
+                    </figure>
+                    
+                    <figure class="grid-item">
+                        <img src="assets/italy-flag-square-small.jpg" width="125" height="100" alt="Italian Flag" class="gallery_img" data-toggle="popover" title="Italy" data-content="Italy is renowned for its art, architecture, and cuisine. It's home to famous landmarks like the Colosseum, the Vatican City, and has a rich history of influential artists and thinkers.">
+                    </figure>
+                    
+                    <figure class="grid-item">
+                        <img src="assets/spain-flag-square-small.jpg" width="125" height="100" alt="Spanish Flag" class="gallery_img" data-toggle="popover" title="Spain" data-content="Spain is known for its vibrant culture, flamenco music and dance, bullfighting, and beautiful beaches. It has a diverse geography and is famous for architectural wonders like Sagrada Familia in Barcelona.">
+                    </figure>
+                    
+                    <figure class="grid-item">
+                        <img src="assets/south-korea-flag-square-small.jpg" width="125" height="100" alt="South Korean Flag" class="gallery_img" data-toggle="popover" title="South Korea" data-content="South Korea is a country known for its technological advancements, K-pop music, and traditional cultural heritage. It has a dynamic blend of modern and ancient influences.">
+                    </figure>
+                    
+                    <figure class="grid-item">
+                        <img src="assets/india-flag-square-small.jpg" width="125" height="100" alt="Indian Flag" class="gallery_img" data-toggle="popover" title="India" data-content="India is a diverse and culturally rich country known for its ancient history, spirituality, and contributions to mathematics and science. It is home to the Taj Mahal and a variety of cuisines.">
+                    </figure>
+                    
+                  </div>
+                </div>
         </section>
         <section>
             <!-- Contact Us -->
@@ -36,6 +72,26 @@
         </footer>
     </main>
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover({
+            trigger: 'manual' // Set trigger to manual to control it with events
+        });
+
+        // Show popover on hover
+        $('[data-toggle="popover"]').on('mouseenter', function () {
+            $(this).popover('show');
+        });
+
+        // Hide popover on mouse leave
+        $('[data-toggle="popover"]').on('mouseleave', function () {
+            $(this).popover('hide');
+        });
+    });
+</script>
 </body>
 
 </html>
