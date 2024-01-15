@@ -108,19 +108,51 @@ header {
     padding: 1.5rem;
 }
 
-header li a {
+.nav-link {
     color: var(--clr-neutral-100);
     text-decoration: none;
 }
 
-header li a:hover {
-    color: var(--clr-accent-300);
+.nav-link:hover {
     padding-bottom: 0.5rem;
     border-bottom: solid 2px var(--clr-accent-300);
+    transition: border-width 0.2s linear;
 }
 
-ul {
+nav ul {
     list-style-type: none;
+}
+
+nav button {
+    height: 2.25rem;
+    aspect-ratio: 1;
+    color: inherit;
+    background-color: inherit;
+    font-size: var(--fs-medium);
+    border: transparent;
+    border-radius: 0.5rem;
+    display: none;
+}
+
+nav button:hover {
+    background-color: var(--clr-accent-300);
+}
+
+@media (max-width: 600px) {
+    nav button {
+        display: block;
+        float: right;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    nav ul.responsive {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 }
 
 /* Hero section */
