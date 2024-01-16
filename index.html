@@ -7,17 +7,24 @@
     <title>Lingo Translation Agency</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/favicon.ico">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 
 <body>
     <header class="flex-row space-between gap-sm">
         <a href="#"><img src="assets/4.png" alt="Lingo" class="img-sm" aria-label="Home" /></a>
+        <ul id="main-nav" class="flex-row gap-md" aria-expanded="false">
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#team">Meet the Team</a></li>
+            <li><a class="nav-link" href="#langs">Languages</a></li>
+            <li><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>        
         <nav>
-            <ul class="flex-row gap-md">
-                <li><a href="#about">About</a></li>
-                <li><a href="#langs">Languages</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
+            <button id="nav-btn" aria-label="Open/close navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
     <main>
