@@ -1,5 +1,7 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var testimonialCarousel = new bootstrap.Carousel(document.getElementById('testimonialCarousel'), {
-      interval: false // Disable automatic sliding for manual control
-    });
-  });
+const navBtn = document.querySelector('#nav-btn');
+const mainNav = document.querySelector('#main-nav');
+
+navBtn.addEventListener('click', (e) => {
+    mainNav.classList.toggle('active');
+    navBtn.classList.toggle('active');
+})

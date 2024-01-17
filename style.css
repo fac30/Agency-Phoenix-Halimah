@@ -33,9 +33,10 @@
 }
 
 .grid-row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-items: center;
 }
 
 .space-between {
@@ -109,18 +110,99 @@ header {
 }
 
 header li a {
-  color: var(--clr-neutral-100);
-  text-decoration: none;
+    color: var(--clr-neutral-100);
+    text-decoration: none;
 }
 
 header li a:hover {
-  color: var(--clr-accent-300);
-  padding-bottom: 0.5rem;
-  border-bottom: solid 2px var(--clr-accent-300);
+    color: var(--clr-accent-300);
+    padding-bottom: 0.5rem;
+    border-bottom: solid 2px var(--clr-accent-300);
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
+}
+
+nav, #nav-btn {
+    display: none;
+}
+
+@media (max-width: 625px) {
+    nav, #nav-btn {
+        display: block;
+    }
+    
+    #nav-btn {
+        height: 2.25rem;
+        aspect-ratio: 1;
+        color: inherit;
+        background-color: inherit;
+        font-size: var(--fs-medium);
+        border: transparent;
+        border-radius: 0.5rem;
+        float: right;
+        position: relative;
+    }
+
+    #nav-btn:hover {
+        background-color: var(--clr-accent-300);
+    }
+
+    #nav-btn span {
+        height: 0.25rem;
+        width: 1.5rem;
+        background-color: var(--clr-neutral-100);
+        border-radius: 25px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+    }
+
+    #nav-btn span:nth-child(1) {
+        top: 25%;
+    }
+
+    #nav-btn span:nth-child(3) {
+        top: 75%;
+    }
+
+    #nav-btn.active span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    #nav-btn.active span:nth-child(2) {
+        display: none;
+    }
+
+    #nav-btn.active span:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    #main-nav {
+        position: absolute;
+        width: 100%;
+        max-width: 30rem;
+        right: 0;
+        top: 0;
+        background-color: var(--clr-accent-300);
+        padding: 1rem;
+        transition: .3s ease;
+        display: none;
+    }
+
+    #main-nav li a:hover {
+        border-bottom: solid 2px var(--clr-neutral-800);
+    }
+
+    #main-nav.active {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* Hero section */
@@ -140,9 +222,10 @@ ul {
 }
 
 .hero img {
-  border-radius: 1rem;
-  max-width: 30rem;
+    border-radius: 1rem;
+    max-width: 30rem;
 }
+
 
 .flag-container {
   display: flex;
