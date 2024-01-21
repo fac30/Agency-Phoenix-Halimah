@@ -56,7 +56,7 @@
   max-width: 7rem;
 }
 
-.stack-sm {
+.stack-sm > * + * {
   margin-top: 0.5rem;
 }
 
@@ -238,10 +238,12 @@ nav, #nav-btn {
 /* Languages section */
 
 .flag-container {
-  display: flex;
+  background-color: #f2f2f2;
+  //display: flex;
   justify-content: center;
-  
-  height: 100vh;
+  height: 70vh; 
+  width: 100%; 
+  padding: 20px; 
 }
 
 .grid-container {
@@ -252,12 +254,14 @@ nav, #nav-btn {
   padding: 20px;
   max-width: 800px;
   width: 100%;
+  //margin-top: 0px;
 }
 .grid-item {
   display: flex; /* new */
 
   justify-content: center;
   height: 100px;
+  aspect-ratio:1;
 }
 .popover {
   font-size: 24px;
@@ -292,14 +296,171 @@ nav, #nav-btn {
 }
 
 
-.flag-container {
+
+
+.center-quote {
   display: flex;
   justify-content: center;
-  
-  height: 100vh;
+  margin-top: 20px; /* Add margin to move the quotes down */
 }
 
-.center-quote{
+.carousel-control {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background: white; /* Set the background color to black */
+  color: black; /* Set the text color to white */
+  border: none;
+  cursor: pointer;
+  background: #f2f2f2;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.carousel-inner {
   display: flex;
-  justify-content: center; 
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+#langs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+.gallery-text {
+  font-size: 18px; /* Adjust the font size for the new class */
+  margin-bottom: 20px;
+}
+.grid-item img {
+  width: 80px; /* Adjust the width of the flags */
+  height: 60px; /* Adjust the height of the flags */
+  margin-bottom: 5px;
+  border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+}
+
+.flag-label {
+  margin-top: 20px;
+  margin-left: 5px; /* Adjust the margin-top value as needed */
+  display: block; /* Ensure each label is on a new line */
+}
+.header-text {
+  max-width: 300px; /* Adjust the width as needed */
+  margin-bottom:100px;
+}
+.blockquote {
+  font-size: 24px;
+  line-height: 36px;
+  position: relative;
+}
+
+.cite {
+  position: absolute;
+  top: 20px; /* Adjust the margin or spacing as needed */
+  left: 60%;
+  transform: translateX(-50%);
+  font-size: 16px; /* Adjust the font size for the cite */
+}
+
+#contact-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Adjust this to your preferred height */
+  background: #f2f2f2;
+}
+
+#contact-btn {
+  background-color: #FF6B6B;
+  color: #FDFFFC;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Modal Styles */
+#contact-btn {
+  background-color: #FF6B6B;
+  color: #FDFFFC;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Modal Styles */
+#contact-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-content {
+  background-color: #FDFFFC;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px; /* Adjust the font size for a larger button */
+  padding: 10px; /* Adjust the padding for a larger button */
+  background: white; /* Remove any background color */
+  border: none; /* Remove any border */
+  color: #2D232E; /* Set the text color */
+}
+
+
+#contact-btn {
+  background-color: #FF6B6B;
+  color: #FDFFFC;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--clr-neutral-800);
+  color: var(--clr-neutral-100);
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
 }
