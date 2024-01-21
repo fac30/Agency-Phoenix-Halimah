@@ -32,4 +32,20 @@ function openContactModal() {
 // Function to close the contact modal
 function closeContactModal() {
     document.getElementById('contact-modal').style.display = 'none';
-}
+};
+
+$(document).ready(function () {
+    $('[data-toggle="popover"]').popover({
+        trigger: 'manual' // Set trigger to manual to control it with events
+    });
+
+    // Show popover on hover
+    $('[data-toggle="popover"]').on('mouseenter', function () {
+        $(this).popover('show');
+    });
+
+    // Hide popover on mouse leave
+    $('[data-toggle="popover"]').on('mouseleave', function () {
+        $(this).popover('hide');
+    });
+});
