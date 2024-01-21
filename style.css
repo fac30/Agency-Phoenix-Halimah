@@ -398,8 +398,8 @@ ul {
   //top: 20%;
   transform: translateY(-50%);
   font-size: 24px;
-  background: white; /* Set the background color to black */
-  color: black; /* Set the text color to white */
+  background: white;
+  color: black;
   border: none;
   cursor: pointer;
   background: #fffff;
@@ -426,8 +426,8 @@ ul {
   box-sizing: border-box;
 }
 .carousel-arrow {
-  width: 30px; /* Adjust the width as needed */
-  height: 30px; /* Adjust the height as needed */
+  width: 30px;
+  height: 30px;
 }
 #langs {
   //display: flex;
@@ -437,23 +437,23 @@ ul {
   background-color: #f2f2f2;
 }
 .gallery-text {
-  font-size: 18px; /* Adjust the font size for the new class */
+  font-size: 18px;
   //margin-bottom: 20px;
 }
 .grid-item img {
-  width: 80px; /* Adjust the width of the flags */
-  height: 60px; /* Adjust the height of the flags */
+  width: 80px;
+  height: 60px;
   margin-bottom: 5px;
-  border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+  border-radius: 5px;
 }
 
 .flag-label {
   margin-top: 20px;
-  margin-left: 5px; /* Adjust the margin-top value as needed */
-  display: block; /* Ensure each label is on a new line */
+  margin-left: 5px;
+  display: block;
 }
 .header-text {
-  //max-width: 300px; /* Adjust the width as needed */
+  //max-width: 300px;
   // margin-bottom: 100px;
   justify-content: center;
   text-allign: center;
@@ -467,17 +467,17 @@ ul {
 
 .cite {
   position: absolute;
-  top: 20px; /* Adjust the margin or spacing as needed */
+  top: 20px;
   left: 60%;
   transform: translateX(-50%);
-  font-size: 16px; /* Adjust the font size for the cite */
+  font-size: 16px;
 }
 
 #contact-btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh; /* Adjust this to your preferred height */
+  height: 20vh;
   background: #fffff;
 }
 
@@ -525,11 +525,11 @@ ul {
   top: 10px;
   right: 10px;
   cursor: pointer;
-  font-size: 24px; /* Adjust the font size for a larger button */
-  padding: 10px; /* Adjust the padding for a larger button */
-  background: white; /* Remove any background color */
-  border: none; /* Remove any border */
-  color: #2d232e; /* Set the text color */
+  font-size: 24px;
+  padding: 10px;
+  background: white;
+  border: none;
+  color: #2d232e;
 }
 
 #contact-btn {

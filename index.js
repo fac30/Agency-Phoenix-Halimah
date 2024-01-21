@@ -29,14 +29,14 @@ function openContactModal() {
     document.getElementById('contact-modal').style.display = 'flex';
 }
 
-// Function to close the contact modal
+
 function closeContactModal() {
     document.getElementById('contact-modal').style.display = 'none';
 };
 
 $(document).ready(function () {
     $('[data-toggle="popover"]').popover({
-        trigger: 'manual' // Set trigger to manual to control it with events
+        trigger: 'manual' 
     });
 
     // Show popover on hover
