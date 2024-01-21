@@ -33,6 +33,11 @@ a {
   color: inherit;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 .flex-row {
   display: flex;
   align-items: center;
@@ -66,12 +71,22 @@ a {
 
 /* Sizes */
 
-.width-sm {
+.center {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.width-xs {
   max-width: 30rem;
 }
 
+.width-sm {
+  max-width: 50rem;
+}
+
 .width-md {
-  max-width: 60rem;
+  max-width: 70rem;
 }
 
 .width-lg {
@@ -80,6 +95,10 @@ a {
 
 .img-sm {
   max-width: 7rem;
+}
+
+.img-md {
+  max-width: 17rem;
 }
 
 .stack-sm > * + * {
@@ -110,12 +129,6 @@ a {
   gap: 3rem;
 }
 
-.center {
-  max-width: 60rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .center-text {
   text-align: center;
 }
@@ -128,7 +141,6 @@ a {
   font-size: var(--fs-regular);
   padding: 1rem;
   text-align: center;
-  vertical-align: middle;
   border-radius: 0.5rem;
   border: none;
   cursor: pointer;
@@ -149,7 +161,8 @@ a {
   border-radius: 0.5rem;
 }
 
-#contact-btn {
+#contact-btn,
+.read-more {
   margin-inline: auto;
   width: auto;
 }
@@ -253,7 +266,7 @@ ul {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-@media (max-width: 625px) {
+@media (max-width: 680px) {
   #nav-btn {
       display: block;
   }
@@ -302,7 +315,7 @@ ul {
   min-width: 15rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   .hero {
     padding: 2rem;
   }
@@ -385,17 +398,51 @@ ul {
 /* Meet the Team section */
 
 .team-grid {
+  --_team-grid-item-width: 17rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   text-align: center;
-  vertical-align: center;
   padding: 1rem;
 }
 
-.team-grid img {
-  border: 2px solid var(--clr-neutral-100);
+.team-grid-item {
+  border: 1rem solid var(--clr-accent-300);
+  background-color: var(--clr-accent-100);
+  padding: 1rem;
+  max-width: var(--_team-grid-item-width);
 }
 
-.team-grid-item {
-  background-color: var(--clr-accent-300);
+.pronouns {
+  display: block;
+  font-style: italic;
+  font-size: var(--fs-small);
+}
+
+.name {
+  font-weight: var(--fw-bold);
+}
+
+.title {
+  font-weight: var(--fw-semi-bold);
+}
+
+.read-more {
+  color: var(--clr-neutral-900);
+  background-color: var(--clr-neutral-100);
+  font-size: var(--fs-small);
+}
+
+.read-more:hover {
+  background-color: var(--clr-neutral-300);
+}
+
+hr {
+  border: 0.125rem solid var(--clr-accent-300);
+}
+
+@media screen and (max-width: 680px) {
+  .team-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
