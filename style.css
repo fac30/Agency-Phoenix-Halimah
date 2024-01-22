@@ -192,6 +192,7 @@ body {
   color: var(--clr-neutral-900);
   font-family: "Inter", system-ui, sans-serif;
   width: 100%;
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -351,8 +352,9 @@ ul {
   display: flex; /* new */
 
   justify-content: center;
-  height: 100px;
+  //height: 100px;
   aspect-ratio: 1;
+  //marin-left: auto;
 }
 .popover {
   font-size: 24px;
@@ -372,10 +374,9 @@ ul {
 
 @media (max-width: 950px) {
   .grid-container {
-    marin-left: 500px;
     grid-template-columns: 1fr 1fr; /* Two columns for small screens */
     grid-template-rows: repeat(
-      3,
+      4,
       100px
     ); /* Set fixed height for small screens */
   }
@@ -384,7 +385,7 @@ ul {
 .carousel-control-prev,
 .carousel-control-next {
   height: 150px;
-  width: 20px;
+  width: 50px;
 }
 
 .center-quote {
@@ -398,8 +399,8 @@ ul {
   //top: 20%;
   transform: translateY(-50%);
   font-size: 24px;
-  background: white;
-  color: black;
+  background: white; /* Set the background color to black */
+  color: black; /* Set the text color to white */
   border: none;
   cursor: pointer;
   background: #fffff;
@@ -414,21 +415,21 @@ ul {
 }
 
 .carousel-inner {
-  //display: flex;
+  display: flex;
   transition: transform 0.5s ease-in-out;
-  overflow: hidden;
-  position: relative;
+  //overflow: hidden;
+  box-sizing: border-box;
 }
 
 .carousel-item {
-  max-width: 100%;
   min-width: 100%;
   box-sizing: border-box;
 }
-.carousel-arrow {
+
+/* .carousel-arrow {
   width: 30px;
   height: 30px;
-}
+} */
 #langs {
   //display: flex;
   justify-content: space-between;
@@ -437,8 +438,8 @@ ul {
   background-color: #f2f2f2;
 }
 .gallery-text {
-  font-size: 18px;
-  //margin-bottom: 20px;
+  font-size: 16px;
+  //margin-bottom: 10px;
 }
 .grid-item img {
   width: 80px;
