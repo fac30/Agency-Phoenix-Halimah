@@ -1,4 +1,6 @@
-# Halimah and Phoenix's project for the Markup module, as part of FAC30
+# FAC30B Markup Module Project
+
+Halimah and Phoenix's project for the markup module, designing a website for a translation agency.
 
 ## Core Stories 
 ### As a potential client, I want to:
