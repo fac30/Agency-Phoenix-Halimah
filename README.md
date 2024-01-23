@@ -37,11 +37,11 @@
     <a href="https://github.com/fac30/Best-Agency-Phoenix-Halimah"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/fac30/Best-Agency-Phoenix-Halimah">View Demo</a>
+    <a href="https://fac30.github.io/Agency-Phoenix-Halimah">View Demo</a>
     ·
-    <a href="https://github.com/fac30/Best-Agency-Phoenix-Halimah/issues">Report Bug</a>
+    <a href="https://github.com/fac30/Agency-Phoenix-Halimah/issues">Report Bug</a>
     ·
-    <a href="https://github.com/fac30/Best-Agency-Phoenix-Halimah/issues">Request Feature</a>
+    <a href="https://github.com/fac30/Agency-Phoenix-Halimah/issues">Request Feature</a>
   </p>
 </div>
 
