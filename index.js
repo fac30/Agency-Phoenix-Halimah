@@ -1,3 +1,5 @@
+// Nav bar hamburger menu
+
 const navBtn = document.querySelector('#nav-btn');
 const mainNav = document.querySelector('#main-nav');
 
@@ -5,6 +7,8 @@ navBtn.addEventListener('click', (e) => {
     mainNav.classList.toggle('active');
     navBtn.classList.toggle('active');
 })
+
+// Testimonial carousel
 
 let currentIndex = 0;
 const items = document.querySelectorAll('.carousel-item');
@@ -25,6 +29,8 @@ function changeSlide(direction) {
   showItem(currentIndex);
 }
 
+// Contact Us modal
+
 function openContactModal() {
     document.getElementById('contact-modal').style.display = 'flex';
 }
@@ -34,18 +40,18 @@ function closeContactModal() {
     document.getElementById('contact-modal').style.display = 'none';
 };
 
-$(document).ready(function () {
-    $('[data-toggle="popover"]').popover({
-        trigger: 'manual' 
-    });
+// $(document).ready(function () {
+//     $('[data-toggle="popover"]').popover({
+//         trigger: 'manual' 
+//     });
 
-    // Show popover on hover
-    $('[data-toggle="popover"]').on('mouseenter', function () {
-        $(this).popover('show');
-    });
+//     // Show popover on hover
+//     $('[data-toggle="popover"]').on('mouseenter', function () {
+//         $(this).popover('show');
+//     });
 
-    // Hide popover on mouse leave
-    $('[data-toggle="popover"]').on('mouseleave', function () {
-        $(this).popover('hide');
-    });
-});
+//     // Hide popover on mouse leave
+//     $('[data-toggle="popover"]').on('mouseleave', function () {
+//         $(this).popover('hide');
+//     });
+// });
