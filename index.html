@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="green-bg">
+    <header class="green-bg" tabindex="0">
         <div class="wrapper flex-row center space-between width-lg gap-sm">
             <h1><a href="#"><img src="assets/4.png" alt="Lingo Agency Logo" class="img-sm" aria-label="Home" /></a></h1>
             <nav class="flex row">
@@ -30,7 +30,7 @@
         </div>
     </header>
     <main class="stack-lg">
-        <section class="hero green-bg" id="hero">
+        <section class="hero green-bg" id="hero" tabindex="0">
             <div class="wrapper grid-row center gap-lg">
                 <div class="col-one stack-md">
                     <h2 tabindex="0">Communication Made Easy</h2>
@@ -42,60 +42,57 @@
                 </div>
             </div>
         </section>
-  
-        <section id="langs" class="lgreen-bg">
-            <h2 class = "center-text">We provide translation services for the following languages</h2>
-            <div class= "flag-container">
-
+        <section class="white-bg" id="about" tabindex="0">
+          <div class="wrapper center stack-md">
+              <h2 tabindex="0" class="center-text">About Us</h2>
+              <p>We've provided professional translation and interpretation services for the past 30 years, with no signs of stopping. Our passion is helping you communicate more effectively, no matter the language, location or medium.</p>
+              <p>Our team specialises in a multitude of languages and we're constantly updating our proprietary software to learn more - all the better to serve your needs.</p>
+          </div>
+      </section>
+        <section id="langs" class="lgreen-bg" tabindex="0">
+            <div class="wrapper center stack-md">
+              <h2 class="center-text">We provide translation services for the following languages</h2>
+              <div class="flag-container">
                 <div class="grid-container center">
                     <figure class="grid-item">
                       <img src="assets/greece-flag-square-small.jpg" alt="Greek Flag" class="gallery_img">
-                   
                     </figure>
-              
+          
                     <figure class="grid-item">
                       <img src="assets/china-flag-small.png" alt="Chinese Flag" class="gallery_img">
-                     
                     </figure>
               
                     <figure class="grid-item">
-                      <img src="assets/russia-flag-square-small.png" alt="Russian Flag" class="gallery_img">
-                     
+                      <img src="assets/russia-flag-square-small.png" alt="Russian Flag" class="gallery_img"> 
                     </figure>
               
                     <figure class="grid-item">
                       <img src="assets/japan-flag-square-small.jpg" alt="Japanese Flag" class="gallery_img">
-                   
                     </figure>
               
                     <figure class="grid-item">
-                      <img src="assets/italy-flag-square-small.jpg" alt="Italian Flag" class="gallery_img">
-                      
+                      <img src="assets/italy-flag-square-small.jpg" alt="Italian Flag" class="gallery_img">  
                     </figure>
               
                     <figure class="grid-item">
-                      <img src="assets/spain-flag-square-small.jpg" alt="Spanish Flag" class="gallery_img">
-                     
+                      <img src="assets/spain-flag-square-small.jpg" alt="Spanish Flag" class="gallery_img"> 
                     </figure>
               
                     <figure class="grid-item">
                       <img src="assets/south-korea-flag-square-small.jpg" alt="South Korean Flag" class="gallery_img">
-                  
                     </figure>
               
                     <figure class="grid-item">
-                      <img src="assets/india-flag-square-small.jpg" alt="Indian Flag" class="gallery_img">
-                     
+                      <img src="assets/india-flag-square-small.jpg" alt="Indian Flag" class="gallery_img"> 
                     </figure>
                   </div>
                   
                 </div>
-                <div class="wrapper center">
-                    <p class="gallery-text">Our experienced team offers high-quality translation services to bridge communication gaps across cultures..</p>
-                    <p class="gallery-text"> Whether you need document translation, website localization, or interpretation services, we are committed to delivering accurate and culturally sensitive solutions.</p>
-                  </div>
+                  <p class="gallery-text">Our experienced team offers high-quality translation services to bridge communication gaps across cultures...</p>
+                  <p class="gallery-text"> Whether you need document translation, website localization, or interpretation services, we are committed to delivering accurate and culturally sensitive solutions.</p>
+            </div>
         </section>
-        <section id="team" class="white-bg">
+        <section id="team" class="white-bg" tabindex="0">
             <div class="wrapper center stack-md">
                 <h2 tabindex="0" class="center-text">Meet the Team</h2>
                 <p>We are a small but dedicated team of passionate people, who work tirelessly to update our proprietary software. We believe in keeping our team small, so you can rest assured you're paying for the product and not our overheads.</p>
@@ -103,14 +100,14 @@
                 <div class="team-grid center width-sm gap-md">
                     <div class="team-grid-item stack-sm">
                         <img src="assets/Isabella-alex-starnes-unsplash.jpg" class="width-xs" alt="A smiling black woman with short hair, wearing a white blouse">
-                        <h3 tabindex="0" class="name">Isabella Rodriguez <span class="pronouns" aria-label="pronouns">she/her</span></h3>
+                        <h3 class="name">Isabella Rodriguez <span class="pronouns">she/her</span></h3>
                         <p class="title">Co-Founder and CEO</p>
                         <hr></hr>
                         <p class="desc" id="desc-1">Isabella has had a passion for languages since she was a child and is a proud polyglot. She studied Modern Foreign Languages at university and, upon meeting Benjamin, set out to create proprietary translation software to meet the needs of emerging markets around the world.</p>
                     </div>
                     <div class="team-grid-item stack-sm">
                         <img src="assets/Benjamin-tyler-nix-unsplash.jpg" class="width-xs" alt="A black man dressed smartly in a vest with an orange tie, stares pensively">
-                        <h3 tabindex="0" class="name">Benjamin Harper <span class="pronouns" aria-label="pronouns">he/they</span></h3>
+                        <h3 class="name">Benjamin Harper <span class="pronouns">he/they</span></h3>
                         <p class="title">Co-Founder and COO</p>
                         <hr></hr>
                         <p class="desc" id="desc-2">Benjamin is passionate about languages. After studying Modern Foreign Languages at university, they joined forces with Isabella to create Lingo. His mission is to help make it easier for people around the world to connect, making "language barriers" a thing of the past.</p>
@@ -118,15 +115,12 @@
                 </div>
             </div>
         </section>
-        <section class="white-bg" id="about">
+        <section id="testimonial" class="lgreen-bg stack-md" tabindex="0">
             <div class="wrapper center stack-md">
-                <h2 tabindex="0" class="center-text">About Us</h2>
-                <p>We've provided professional translation and interpretation services for the past 30 years, with no signs of stopping. Our passion is helping you communicate more effectively, no matter the language, location or medium.</p>
-                <p>Our team specialises in a multitude of languages and we're constantly updating our proprietary software to learn more - all the better to serve your needs.</p>
+              <h2 class="center-text">Why Choose Lingo?</h2>
+              <p class="center-text">Hear from some of our valued customers!</p>
             </div>
-        </section>
-        <section style="height: 200px;">
-          <div id="testimonialCarousel" class="carousel slide">
+            <div id="testimonialCarousel" class="carousel slide"> <!-- .carousel and .slide aren't being used anywhere-->
               <div class="carousel-inner">
                   <div class="carousel-item active">
                     <blockquote class="blockquote center-quote stack-sm">
@@ -136,7 +130,7 @@
                   </div>
                   <div class="carousel-item">
                       <blockquote class="blockquote center-quote stack-sm">
-                          <p class="mb-0">"Extravagent"</p>
+                          <p class="mb-0">"Extravagant"</p>
                           <cite class="cite">Kate</cite>
                         </blockquote>
                   </div>
@@ -146,52 +140,50 @@
                           <cite class="cite">Michael</cite>
                         </blockquote>
                   </div>
-                </div>
+              </div>
                 <button class="carousel-control carousel-control-prev" onclick="changeSlide(-1)">
                   <img src="/assets/left-arrow.png" alt="Previous" class="carousel-arrow">
                 </button>
                 <button class="carousel-control carousel-control-next" onclick="changeSlide(1)">
                   <img src="/assets/right-arrow.png" alt="Next" class="carousel-arrow">
                 </button>
-              </div>
-            </section>
+            </div>
+        </section>
 
-              <section>
-                <div id="contact-btn-container">
+              <section id="contact" class="white-bg" tabindex="0">
+                <div class="wrapper center stack-md">
+                  <h2 class="center-text">Contact Us</h2>
+                  <p>If you would like to know more about our product or find out how you can use our services today, please contact us below!</p>
+                  <div id="contact-btn-container">
                     <!-- Contact Button -->
-                    <button id="contact-btn" onclick="openContactModal()">Contact Us</button>
-                </div>
-                <div class="modal" id="contact-modal">
+                    <button class="btn" id="contact-btn" onclick="openContactModal()">Contact Us</button>
+                  </div>
+                  <div class="modal" id="contact-modal">
                     <div class="modal-content">
-                        <span class="close-btn" onclick="closeContactModal()">&times;</span>
-                        <h2>Contact Us</h2>
+                      <span class="close-btn" onclick="closeContactModal()">&times;</span>
                         <form id="contactForm">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
-                
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
-                
-                            <button type="submit">Submit</button>
+                          <label for="name">Name:</label>
+                          <input type="text" id="name" name="name" required>
+                          
+                          <label for="email">Email:</label>
+                          <input type="email" id="email" name="email" required>
+                          
+                          <label for="message">Message:</label>
+                          <textarea id="message" name="message" rows="4" required></textarea>
+                          
+                          <button class="btn" type="submit">Submit</button>
                         </form>
+                      </div>
                     </div>
-                </div>
-              </section>
+                  </div>
+                </section>
               <footer>
-                <div class="footer-content">
-                  <p>&copy; Created by Halimah and Phoenix - FAC30B</p>
-      
+                <div class="width-lg footer-content">
+                  <p>&copy; Created by <a href="https://github.com/fac30/Agency-Phoenix-Halimah">Halimah and Phoenix</a> - FAC30B</p>
                 </div>
               </footer>
     </main>
     <script src="index.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-    <script>
-    </script>
 </body>
 
 </html>
