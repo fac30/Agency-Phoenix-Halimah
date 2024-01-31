@@ -39,6 +39,8 @@
     <br />
     <a href="https://fac30.github.io/Agency-Phoenix-Halimah">View Demo</a>
     ·
+    <a href="https://hackmd.io/@yG9_8IIzTLO4-xacTazOoQ/HyArnRAKp">View Slides</a>
+    ·
     <a href="https://github.com/fac30/Agency-Phoenix-Halimah/issues">Report Bug</a>
     ·
     <a href="https://github.com/fac30/Agency-Phoenix-Halimah/issues">Request Feature</a>
